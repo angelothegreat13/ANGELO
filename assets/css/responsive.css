@@ -1,0 +1,109 @@
+/* Custom breakpoint */
+@media screen and (max-width:896px) {
+    /* Responsive navbar style */
+    .main-nav {
+        background: #4eabf1;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .main-nav .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(240, 240, 240);
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 280px;
+        height: 100%;
+        transform: translateX(-100%); /* hide the sidebar in left */
+        transition: transform 0.3s ease-in; /* animation */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    .menu .item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        border-bottom: 1px solid rgba(138, 138, 138, 0.1);
+    }
+    .menu .item:last-child {
+        border-bottom: none;
+    }
+    .menu .item a svg {
+        color: rgba(0, 0, 0, 0.4);
+    }
+    .menu .item a span {
+        color: #212121;
+    }
+    .menu .item:hover {
+        background: none;
+    }
+    .menu .item a span:hover {
+        color: #4eabf1;
+    }
+    .close-nav-box {
+        display: block;
+    }
+
+    .main-container {
+        margin-top: 100px;
+    }
+}
+
+/* small device like iphone 5 */
+@media screen and (max-width:320px) {
+    
+}
+
+/* 480px mobile size */
+@media screen and (max-width:480px ) {
+    /* Contact header style */
+    .contact-header {
+        background: #343A40;
+        padding: 10px 15px;
+    }
+
+    /* Navigation style */
+    .main-nav .logo span {
+        font-size: 1.8rem;  
+    }
+    .menu .item a svg {
+        height: 11px;
+        width: 11px;
+    }
+    .menu .item a span {
+        font-size: 1.3rem;
+    }
+
+    .main-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Small screen (sm) */
+@media screen and (max-width:640px ) {
+    
+}
+
+/* Medium screen (md) */
+@media screen and (max-width:768px) {
+
+    
+}
+
+/* Large screen (lg) */
+@media screen and (max-width:1024px) {
+    /* horizontal div */
+    .hz-container .item {
+        min-width: 120px;
+    }
+}
+
+/* Extra Large screen (xl) */
+@media screen and (max-width:1280px) {
+   
+}
