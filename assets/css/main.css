@@ -37,12 +37,12 @@ a { text-decoration: none; }
     padding-left: 30px;
 }
 
+
 /* Contact header style */
 .contact-header {
     background: #343A40;
     padding: 10px 30px;
 }
-
 .contacts {
     display: flex;
     flex-wrap: nowrap;
@@ -74,24 +74,22 @@ a { text-decoration: none; }
 .contacts span:last-child{
     margin-right: 0px;
 }
-
 .social-media {
     display: flex;
     flex: 1;
     justify-content: flex-end;
 }
-
 .social-media .icon {
     height: 25px;
     width: 25px;
     margin: 0px  5px;
 }
 
+
 /* Navigation style */
 .header-nav {
     width: 100%;
     background: #66aadf;
-    margin-bottom: 30px;
     position: sticky;
     top: 0;
 }
@@ -185,18 +183,66 @@ a { text-decoration: none; }
     display: flex;
     overflow-x: auto;
 }
-
 .hz-container::-webkit-scrollbar {
     display: none;
 }
-
 .hz-container .item {
     width: 12.5%;
     height: 125px;
     background: #ddd;
     margin-right: 10px;
 }
-
 .hz-container .item:last-child{
     margin-right: 0px;
-}   
+}
+
+
+/* Cover image */
+/* .cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+.cover {
+    height: 625px;
+    width: 100%;
+    background: url('/assets/images/cover.webp');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.cover-text {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.cover-text span{
+    background: blueviolet;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+}
+.cover-text h1 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 2.1rem;
+}
+.cover-text p {
+    width: 320px;
+    text-align: justify;
+}
+
+/* Custom button style */
+.my-button {
+    background: #66aadf;
+    color: #FFF;
+    border: #59a3db;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.my-button:hover {
+    cursor: pointer;
+    background: #4399db;
+}
+
