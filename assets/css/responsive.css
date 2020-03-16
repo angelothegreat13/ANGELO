@@ -67,14 +67,17 @@
 
 /* Medium screen (md) */
 @media screen and (max-width:768px) {
-
-    
+    .cover {
+        height: 550px;
+    }
 }
 
 
 /* Small screen (sm) */
 @media screen and (max-width:640px ) {
-    
+    .cover {
+        height: 500px;
+    }
 }
 
 
@@ -102,11 +105,18 @@
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .cover {
+        height: 425px;
+    }
 }
 
 
 /* small device like iphone 5 */
 @media screen and (max-width:320px) {
+    .cover {
+        height: 400px;
+    }
     .cover-text p {
         width: 300px;
         text-align: center;
